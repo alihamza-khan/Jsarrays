@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Applications</title>
+</head>
+<body>
+
+<h1>Mini Applications Using Functions and Conditional Statements</h1>
+
+<script>
+function checkEvenOdd() {
+    let num = prompt("Enter a number");
+    if (num % 2 === 0) {
+        alert("Even Number");
+    } else {
+        alert("Odd Number");
+    }
+}
+
+function calculateGrade() {
+    let marks = prompt("Enter marks");
+    if (marks >= 90) {
+        alert("Grade A");
+    } else if (marks >= 75) {
+        alert("Grade B");
+    } else if (marks >= 60) {
+        alert("Grade C");
+    } else {
+        alert("Fail");
+    }
+}
+
+function login() {
+    let user = prompt("Enter username");
+    let pass = prompt("Enter password");
+    if (user === "admin" && pass === "1234") {
+        alert("Login Successful");
+    } else {
+        alert("Invalid Credentials");
+    }
+}
+
+function checkNumber() {
+    let num = prompt("Enter a number");
+    if (num > 0) {
+        alert("Positive");
+    } else if (num < 0) {
+        alert("Negative");
+    } else {
+        alert("Zero");
+    }
+}
+
+function calculator() {
+    let a = Number(prompt("Enter first number"));
+    let b = Number(prompt("Enter second number"));
+    let op = prompt("Enter operator + - * /");
+    if (op === "+") {
+        alert(a + b);
+    } else if (op === "-") {
+        alert(a - b);
+    } else if (op === "*") {
+        alert(a * b);
+    } else if (op === "/") {
+        alert(a / b);
+    } else {
+        alert("Invalid Operator");
+    }
+}
+
+function canVote() {
+    let age = prompt("Enter age");
+    if (age >= 18) {
+        alert("Eligible to Vote");
+    } else {
+        alert("Not Eligible to Vote");
+    }
+}
+
+function checkPassword() {
+    let pass = prompt("Enter password");
+    if (pass.length >= 8) {
+        alert("Strong Password");
+    } else {
+        alert("Weak Password");
+    }
+}
+
+checkEvenOdd();
+calculateGrade();
+login();
+checkNumber();
+calculator();
+canVote();
+checkPassword();
+</script>
+
+</body>
+</html>
