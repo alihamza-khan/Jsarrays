@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Marks</title>
+</head>
+<body>
+
+<h2>Student Marks Application</h2>
+
+<script>
+let marks = [];
+let sum = 0;
+
+for (let i = 0; i < 3; i++) {
+    marks[i] = Number(prompt("Enter marks"));
+    sum = sum + marks[i];
+}
+
+let avg = sum / 3;
+
+alert("Average: " + avg);
+
+if (avg >= 50) {
+    alert("Pass");
+} else {
+    alert("Fail");
+}
+</script>
+
+</body>
+</html>
